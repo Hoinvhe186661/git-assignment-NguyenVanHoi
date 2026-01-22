@@ -13,9 +13,11 @@ class Calculator:
         self.history = []
     
     def add(self, a, b):
-        """Addition operation - to be implemented in feature/KSSTUDENTS/NguyenVanHoi/implement_plus"""
-        # TODO: Implement addition
-        pass
+        """Addition operation - IMPLEMENTED"""
+        result = a + b
+        operation = f"{a} + {b} = {result}"
+        self.history.append(operation)
+        return result
     
     def subtract(self, a, b):
         """Subtraction operation - to be implemented in feature/KSSTUDENTS/NguyenVanHoi/implement_minus"""
