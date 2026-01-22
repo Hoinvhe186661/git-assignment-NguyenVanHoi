@@ -27,9 +27,11 @@ class Calculator:
         return result
     
     def multiply(self, a, b):
-        """Multiplication operation - to be implemented in feature/KSSTUDENTS/NguyenVanHoi/implement_multiply"""
-        # TODO: Implement multiplication
-        pass
+        """Multiplication operation - IMPLEMENTED"""
+        result = a * b
+        operation = f"{a} * {b} = {result}"
+        self.history.append(operation)
+        return result
     
     def divide(self, a, b):
         """Division operation - to be implemented in feature/KSSTUDENTS/NguyenVanHoi/implement_divide"""
