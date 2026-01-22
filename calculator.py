@@ -28,9 +28,13 @@ class Calculator:
         pass
     
     def divide(self, a, b):
-        """Division operation - to be implemented in feature/KSSTUDENTS/NguyenVanHoi/implement_divide"""
-        # TODO: Implement division
-        pass
+        """Division operation - IMPLEMENTED"""
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        result = a / b
+        operation = f"{a} / {b} = {result}"
+        self.history.append(operation)
+        return result
     
     def get_history(self):
         """Get calculation history"""
